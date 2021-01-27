@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conheça a Ferrari Auto Center" />
     <title>Ferrari - Hcode Lab</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/ferrari-logo.svg"
+    />
+    <link rel="alternate icon" href="assets/images/ferrari-logo.ico" />
+    <meta name="theme-color" content="#eceae7" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -73,16 +82,12 @@
       sizes="16x16"
       href="assets/images/favicon-16x16.png"
     />
-    <link rel="manifest" href="manifest.json" />
-    <meta name="msapplication-TileColor" content="#E1DEDD" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
       name="msapplication-TileImage"
       content="assets/images/ms-icon-144x144.png"
     />
-    <meta name="theme-color" content="#E1DEDD" />
-    <meta name="description" content="Conheça a Ferrari Auto Center" />
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/cropper.min.css" type="text/css" />
+    <link href="manifest.json" rel="manifest" />
   </head>
   <body>
     <header id="header">
@@ -181,43 +186,69 @@
       </div>
       <hr class="italy" />
     </header>
-
-    <section class="page" id="change-photo">
+    <section id="schedules-address-form-create" class="page blue">
       <header>
-        <h1>Mudar Foto</h1>
+        <h1>Novo Endereço</h1>
       </header>
 
       <main>
-        <form>
-          <img
-            src="assets/images/user@4x.png"
-            alt="Foto Atual"
-            id="photo-preview"
-          />
+        <form action="schedules-summary.html">
+          <div class="fields zipcode">
+            <div class="field">
+              <input type="text" name="zipcode" id="zipcode" />
+              <label for="zipcode">CEP</label>
+            </div>
+            <div class="field">
+              <button type="button" id="btn-search">Buscar</button>
+            </div>
+          </div>
 
-          <input type="file" name="photo" id="file" />
+          <div class="fields address-number">
+            <div class="field">
+              <input type="text" name="address" id="address" />
+              <label for="address">Endereço</label>
+            </div>
 
-          <input type="hidden" name="x" />
-          <input type="hidden" name="y" />
-          <input type="hidden" name="width" />
-          <input type="hidden" name="height" />
+            <div class="field">
+              <input type="text" name="number" id="number" />
+              <label for="number">Número</label>
+            </div>
+          </div>
 
-          <button type="button" class="choose-photo">Escolher Foto</button>
+          <div class="field">
+            <input type="text" name="complement" id="complement" />
+            <label for="complement">Complemento</label>
+          </div>
 
-          <div class="toast success open">
-            Foto alterada com sucesso!
-            <button type="button" class="close">
-              <span>&times;</span>
-            </button>
+          <div class="field">
+            <input type="text" name="district" id="district" />
+            <label for="district">Bairro</label>
+          </div>
+
+          <div class="field">
+            <input type="text" name="city" id="city" />
+            <label for="city">Cidade</label>
+          </div>
+
+          <div class="fields">
+            <div class="field">
+              <input type="text" name="state" id="state" />
+              <label for="state">Estado</label>
+            </div>
+
+            <div class="field">
+              <input type="text" name="country" id="country" />
+              <label for="country">País</label>
+            </div>
           </div>
 
           <footer class="fixed">
-            <button type="submit">Salvar</button>
+            <a href="schedules-address.html">Voltar</a>
+            <button type="submit">Cadastrar</button>
           </footer>
         </form>
       </main>
     </section>
-
     <script src="bundle.js"></script>
   </body>
 </html>
