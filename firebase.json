@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  },
+
+  "apiKey": "AIzaSyCQCgH5f-rVrfx8dfXMtoqGD0pmSIvmWBo",
+  "authDomain": "ferrari-henrique.firebaseapp.com",
+  "projectId": "ferrari-henrique",
+  "storageBucket": "ferrari-henrique.appspot.com",
+  "messagingSenderId": "23167259816",
+  "appId": "1:23167259816:web:1196d74258b0556e65de9d",
+  "measurementId": "G-VTKBJMPJPT"
+}
